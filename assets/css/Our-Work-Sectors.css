@@ -1,0 +1,103 @@
+/* General styles for Our Work Sectors section */
+.Our-Work-Sectors {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    margin-top: 150px;
+}
+
+.Our-Work-Sectors-title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.Our-Work-Sectors-description p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.Our-Work-Sectors-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Work-Sector {
+    width: 30%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(49, 231, 216);
+    border-radius: 10px 100px / 120px;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    color: white !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Work-Sector:hover {
+    background-color: rgb(148, 255, 219);
+    border-radius: 30px 160px / 100px;
+}
+
+.Work-Sector i {
+    margin-right: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .Work-Sector {
+        width: 48%; /* Two columns on smaller screens */
+    }
+}
+
+/* Media query for even smaller screens (e.g., phones) */
+@media (max-width: 480px) {
+    .Work-Sector {
+        width: 100%; /* Single column on smaller screens */
+    }
+}
+
+
+.Work-Sector:nth-child(1) {
+    background-color: #00b7ff; /* Green for Education */
+}
+
+.Work-Sector:nth-child(2) {
+    background-color: #1cbd45; /* Amber for Protection */
+}
+
+.Work-Sector:nth-child(3) {
+    background-color: #21d4f3; /* Blue for Health */
+}
+
+.Work-Sector:nth-child(4) {
+    background-color: #0ac93a; /* Deep Orange for Social Cohesion and Peace Building */
+}
+
+.Work-Sector:nth-child(5) {
+    background-color: #FF9800; /* Orange for Food Security and Livelihood */
+}
+
+.Work-Sector:nth-child(6) {
+    background-color: #9C27B0; /* Purple for Human Rights and Democracy */
+}
+
+.Work-Sector:nth-child(7) {
+    background-color: #795548; /* Brown for Shelter and Non-Food Items */
+}
+
+.Work-Sector:nth-child(8) {
+    background-color: #FF4081; /* Pink for Early Recovery */
+}
+
+.Work-Sector:nth-child(9) {
+    background-color: #8BC34A; /* Light Green for Environment and Climate Change */
+}
